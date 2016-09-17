@@ -58,15 +58,9 @@ if(pat_name != ""){
    if(pat_name == pat_id_namea){
     alert(pat_name+"pat_name"+pat_id_namea+'pat_id_namea');
 
-    function onDeviceReady() {
-      alert('onDeviceReady');
-    // Register the event listener
-    document.addEventListener("backbutton", onBackKeyDown, false);
-    
+
     document.addEventListener("pause", onPause, false);
 
-    console.log('Device ready - register onBackKeyDown()');                
-}
 
 function onPause() {
 alert('navigator.app.exitApp   onpause inside js');
