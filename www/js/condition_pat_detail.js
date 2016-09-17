@@ -59,14 +59,9 @@ if(pat_name != ""){
     alert(pat_name+"pat_name"+pat_id_namea+'pat_id_namea');
 
 
-    document.addEventListener("pause", onPause, false);
-
-
-function onPause() {
-alert('navigator.app.exitApp   onpause inside js');
             navigator.app.exitApp();
 
-}
+
 
   navigator.geolocation.getCurrentPosition(onSuccess, onError);  
 //alert('as');
