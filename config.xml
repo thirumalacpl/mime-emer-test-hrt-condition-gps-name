@@ -71,8 +71,6 @@
 <gap:plugin name="cordova-plugin-request-location-accuracy" source="npm" />
 
 
-<gap:plugin name="GpsDetectionPlugin" value="com.butterflyeffect.plugins.GPSDetectionPlugin" source="npm"/>
-
 <gap:plugin name="phonegap-plugin-push" source="npm" version="1.3.0"/>
 
   <gap:plugin name="com.phonegap.plugin.statusbar" />
