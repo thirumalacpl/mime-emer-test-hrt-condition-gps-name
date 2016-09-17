@@ -29,6 +29,9 @@
 function onDeviceReady() {
     // Register the event listener
     document.addEventListener("backbutton", onBackKeyDown, false);
+
+    document.addEventListener("pause", onPause, false);
+
     console.log('Device ready - register onBackKeyDown()');                
 }
 
@@ -45,6 +48,12 @@ function onBackKeyDown() {
     else{
     navigator.app.backHistory();
     }
+}
+
+function onPause() {
+alert('navigator.app.exitApp    onpuase index.html');
+            navigator.app.exitApp();
+
 }
 //**
 </script>

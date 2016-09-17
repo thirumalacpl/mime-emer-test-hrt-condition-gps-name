@@ -41,7 +41,7 @@ pat_id_last =  JSON.parse(sessionStorage.getItem("pat_id_lasts"));
 
 alert(pat_id_namea+'pat_id_namea');
 
- 
+
 /*alert(lat_hosp+'lat_hosp');
 alert(long_hosp+'long_hosp');*/
 
@@ -56,6 +56,24 @@ alert(long_hosp+'long_hosp');*/
 if(pat_name != ""){
 
    if(pat_name == pat_id_namea){
+    alert(pat_name+"pat_name"+pat_id_namea+'pat_id_namea');
+
+    function onDeviceReady() {
+      alert('onDeviceReady');
+    // Register the event listener
+    document.addEventListener("backbutton", onBackKeyDown, false);
+    
+    document.addEventListener("pause", onPause, false);
+
+    console.log('Device ready - register onBackKeyDown()');                
+}
+
+function onPause() {
+alert('navigator.app.exitApp   onpause inside js');
+            navigator.app.exitApp();
+
+}
+
   navigator.geolocation.getCurrentPosition(onSuccess, onError);  
 //alert('as');
       function onSuccess(position) {
